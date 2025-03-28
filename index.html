@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FoodTrove Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <div class="bg-white shadow sticky top-0 z-10 ">
+        <nav class="max-w-5xl mx-auto p-5 md:p-7 md:flex justify-between items-center">
+            <div class="flex justify-between items-center">
+            <div class="bg-gray-100 rounded p-1">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+                id="burger"
+                >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+                />
+                </svg>
+            </div>
+            
+        </div>
+                <ul id="menu" class="hidden  mt-3  md:flex flex-row gap-8 md:mt-3">
+                    <li class="pb-5"><a href="#home" class="hover:opacity-90">Home</a></li>
+                    <li class="pb-5">
+                        <a href="#" class="">Category <i class="fa-solid fa-caret-down"></i> </a>
+                    </li>
+                    <li class="pb-5">
+                        <a href="#product">Product <i class="fa-solid fa-caret-down"></i> </a>
+                    </li>
+                    <li class="pb-5">
+                        <a href="#footer">Legal <i class="fa-solid fa-caret-down"></i> </a>
+                    </li>
+                    <li class="pb-5">
+                        <a href="#blog">Blog <i class="fa-solid fa-caret-down"></i> </a>
+                    </li>
+                    <li class="pb-5">
+                        <a href="#element">Elements <i class="fa-solid fa-caret-down"></i> </a>
+                    </li>
+                </ul>
+                <p class="mt-5 md:mt-0"><a href="#"><i class="fa-solid fa-phone"></i> +123 ( 456 ) ( 7890 )</p></a>
+        </nav>
+    </div>
+
+    <header class="bg-white shadow">
+      <div
+        class="max-w-5xl mx-auto flex flex-col items-center md:flex-row justify-between gap-10 m-6 p-5 md:p-7"
+      >
+        <div class="flex justify-between items-center">
+          <img src="./asset/assets/apple-web.png" alt="" />
+          <img src="./asset/assets/foodtrove.png" alt="" />
+        </div>
+        <form class="flex justify-between items-center" id="search" >
+          <input
+            type="text"
+            name="text"
+            id="input1"
+            placeholder="Search for items"
+            class="border border-green-400 p-2 w-full  text-m outline-0"
+          />
+       <button type="submit" class=" btn2 flex justify-between items-center text-sm w-2/3 p-2.5  gap-2 border border-green-400 cursor-pointer">
+        <p>All category</p>
+        <i class="fa-solid fa-caret-down"></i>
+       </button>
+
+        <button
+          class="bg-orange-600 p-2 text-white text-m cursor-pointer"
+          id="btn1"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        </form>
+
+        <div class="flex justify-between items-center space-x-5">
+          <div>
+            <a href="#"><i class="fa-regular fa-user"></i> Account</a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+<main style="background-color: #E9CBBE;"  id="home">
+    <div class="carousel max-w-5xl mx-auto px-5 py-32 w-full h-full relative">
+        <!-- <div class="btn">
+            <button class="carousel-button prev absolute z-20 border-0 text-2xl cursor-pointer top-96 ml-0 md:-ml-7 left-5 bg-amber-50 rounded-2xl px-2 hover:text-white hover:bg-teal-200 focus:text-white focus:outline-1" data-carousel-button="prev">&#8656</button>
+            <button class="carousel-button next absolute z-20 border-0 text-2xl cursor-pointer top-96 -ml-7 right-5 bg-amber-50 rounded-2xl px-2 hover:text-white hover:bg-teal-200 focus:text-white focus:outline-1" data-carousel-button="next">&#8658</button>
+        </div> -->
+        <ul>
+            <li class="">
+                <section
+            class=" flex flex-col items-center md:flex-row-reverse  gap-2 w-full"
+        >
+
+        <div class="w-full md:1/2">
+            <img
+            src="./asset/assets/basket-tomato.png"
+            alt=""
+            class="w-60 mx-auto md:w-full rounded-full"
+        />
+        </div>
+
+        <div class="w-full md:1/2">
+            <h4 class="mt-3">
+            <span class="text-orange-500 underline md:text-2xl">100%</span>
+            Organic Vegetables
+            </h4>
+            <h2 class="text-2xl md:text-6xl my-3 font-bold">
+            The best way to stuff your wallet.
+            </h2>
+            <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            quibusdam minima ullam consect
+            </p>
+            <button
+            class="bg-orange-600 px-4 py-2 text-white mt-7 rounded-xl cursor-pointer hover:bg-teal-500 active:bg-slate-500 transform hover:scale-125 transition ease-out duration-300"
+            >
+            Shop Now
+            </button>
+        </div>
+        </section>
+            </li>
+
+            <!-- <li class="slide absolute inset-0 opacity-0">
+                <section
+            class=" flex flex-col items-center md:flex-row-reverse gap-2 w-full"
+        >
+
+        <div class="w-full md:1/2 product-container">
+            <img
+            src="./assets/basket.jpg"
+            alt=""
+            class="w-60 mx-auto md:w-full rounded-full"
+        />
+        </div>
+
+        <div class="w-full md:1/2">
+            <h4 class="mt-3">
+            <span class="text-orange-500 underline md:text-2xl">100%</span>
+            Organic Vegetables
+            </h4>
+            <h2 class="text-2xl md:text-4xl my-3 font-bold">
+            The best way to stuff your wallet.
+            </h2>
+            <p class="md:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            quibusdam minima ullam natus, perferendis incidunt molestias qui quo
+            </p>
+            <button
+            class="bg-orange-600 px-4 py2 text-white mt-7 rounded-l cursor-pointer hover:bg-amber-950 active:bg-amber-500 transform hover:scale-125 transition ease-out duration-300"
+            >
+            Shop Now
+            </button>
+        </div>
+        </section>
+            </li> -->
+
+            <!-- <li class="slide absolute inset-0 opacity-0">
+                <section
+            class=" flex flex-col items-center md:flex-row-reverse gap-2 w-full"
+        >
+
+        <div class="w-full md:1/2 product-container">
+            <img
+            src="./assets/basket-tomato.png"
+            alt=""
+            class="w-60 mx-auto md:w-full rounded-full"
+        />
+        </div>
+
+        <div class="w-full md:1/2">
+            <h4 class="mt-3">
+            <span class="text-orange-500 underline md:text-2xl">100%</span>
+            Organic Vegetables
+            </h4>
+            <h2 class="text-2xl md:text-4xl my-3 font-bold">
+            The best way to stuff your wallet.
+            </h2>
+            <p class="md:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            quibusdam minima ullam natus, perferendis incidunt molestias qui quo
+            </p>
+            <button
+            class="bg-orange-600 px-4 py2 text-white mt-7 rounded-l cursor-pointer hover:bg-amber-950 active:bg-amber-500 transform hover:scale-125 transition ease-out duration-300"
+            >
+            Shop Now
+            </button>
+        </div>
+        </section>
+            </li> -->
+        </ul>
+    </div>
+</main>
+
+    <!-- cake -->
+    <section
+      class="max-w-5xl mx-auto p-5 mt-5 md:grid grid-cols-3 gap-4"
+      id="element"
+    >
+      <div class="bg-cover bg-center md:h-96 rounded-2xl mb-5">
+        <ul class="">
+          <div class="filtered hidden"></div>
+          <li class="text-center bg-gray-200 mb-1 p-1 rounded-2xl">
+            <a href="">
+              <p class="text-red-600 md:text-xl">Cake & milk</p>
+              <p class="md:text-l">(65 items)</p>
+            </a>
+          </li>
+          <li class="text-center bg-gray-200 mb-1 p-1 rounded-2xl">
+            <a href="">
+              <p class="md:text-xl">Fresh Meat</p>
+              <p class="md:text-l">(35 items)</p>
+            </a>
+          </li>
+          <li class="text-center bg-gray-200 mb-1 p-1 rounded-2xl">
+            <a href="">
+              <p class="md:text-xl">Vegetables</p>
+              <p class="md:text-l">(25 items)</p>
+            </a>
+          </li>
+          <li class="text-center bg-gray-200 mb-1 p-1 rounded-2xl">
+            <a href="">
+              <p class="md:text-xl">Apple & Mango</p>
+              <p class="md:text-l">(45 items)</p>
+            </a>
+          </li>
+          <li class="text-center bg-gray-200 mb-1 p-1 rounded-2xl">
+            <a href="">
+              <p class="md:text-xl">Strawberry</p>
+              <p class="md:text-l">(68 items)</p>
+            </a>
+          </li>
+          <li class="text-center bg-gray-200 mb-1 p-1 rounded-2xl">
+            <a href="">
+              <p class="text-red-600 md:text-xl p-3">View More</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-cover bg-center md:h-96 rounded-2xl mb-5 relative"
+        style="background-image: url('./asset/assets/cake-design.png')"
+      >
+        <section class="text-center text-white pt-48">
+          <h1 class="text-xl md:text-4xl font-bold mb-4">Cake</h1>
+
+          <button
+            class="bg-orange-700 text-white text-sm md:text-lg p-5 rounded-xl my-10 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+          >
+            Shop Now
+          </button>
+        </section>
+        <div
+          class="bg-gray-950 text-white text-xl md:text-3xl inline-block rounded-br-4xl p-2 absolute top-1 left-1"
+        >
+          <p>50%</p>
+          <p>OFF</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-cover bg-center md:h-96 rounded-2xl mb-5 relative"
+        style="background-image: url('./asset/assets/milk-kettle.png')"
+      >
+        <section class="text-center text-white pt-48">
+          <h1 class="text-xl md:text-4xl font-bold mb-4">Milk</h1>
+
+          <button
+            class="bg-orange-700 text-white text-sm md:text-lg p-5 rounded-xl my-10 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+          >
+            Shop Now
+          </button>
+        </section>
+        <div
+          class="bg-gray-950 text-white text-xl md:text-3xl inline-block rounded-br-4xl p-2 absolute top-1 left-1"
+        >
+          <p>40%</p>
+          <p>OFF</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular product -->
+    <section class="max-w-5xl mx-auto p-5" id="product">
+      <div class="p-5 mt-5 rounded-2xl text-center">
+        <p class="font-bold text-2xl md:text-4xl mt-7">Popular Product</p>
+        <p class="text-xl md:text-xl my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Porro, vel repellendus inventore dolor animi facilis natu inventore
+        </p>
+      </div>
+
+      <div class="md:flex justify-start gap-3 mt-5">
+        <!-- first -->
+        <div>
+          <div>
+            <ul class="list">
+              <li
+                class="bg-gray-200 mt-3 rounded-l text-red-500 flex justify-between p-2 cursor-pointer"
+              >
+                <p>All</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+
+              <li
+                class="bg-gray-200 mt-3 rounded-l flex justify-between p-2 cursor-pointer snack"
+              >
+                <p>Snack</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+
+              <li
+                class="bg-gray-200 mt-3 rounded-l flex justify-between p-2 cursor-pointer vegetables"
+              >
+                <p>Vegetable</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+
+              <li
+                class="bg-gray-200 mt-3 rounded-l flex justify-between p-2 cursor-pointer fruit"
+              >
+                <p>Fruit</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+
+              <li
+                class="bg-gray-200 mt-3 rounded-l flex justify-between p-2 cursor-pointer bakery "
+              >
+                <p>Bakery</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+
+              <li
+                class="bg-gray-200 mt-3 rounded-l flex justify-between p-2 cursor-pointer"
+              >
+                <p>Juice</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-cover bg-center h-96 my-5 rounded-2xl"
+            style="background-image: url('./asset/assets/banner.png')"
+          >
+            <section class="text-black px-5 pt-10 pb-5 text-left">
+              <h1 class="text-xl md:text-4xl font-bold mb-6">
+                Juicy <br />
+                <span class="text-yellow-600">FRUITS......</span>
+              </h1>
+              <p class="text-sm md:text-xl mb-2">
+                <span class="font-bold">100%</span> Natural
+              </p>
+              <button
+                class="bg-orange-700 text-white text-sm md:text-lg p-2 rounded-xl my-10 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+              >
+                Shop Now
+              </button>
+            </section>
+          </div>
+        </div>
+        <!-- second -->
+        <div class="md:grid grid-cols-3 gap-3 items vegetable">
+          <div class="mb-4 veges">
+            <div class="shadow-2xl rounded-xl p-3 relative">
+              <img
+                src="./asset/assets/orange (2).png"
+                alt="lamon-fruit"
+                class="w-40 bg-gray-200 mx-auto"
+              />
+              <p class="text-center md:my-2 my-6">Vegetables</p>
+              <div class="text-orange-500 text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <p class="text-center">
+                Fresh Organic villa farm lamon <br />
+                500g pack
+              </p>
+              <p class="text-center">
+                <span class="text-red-500">$120.25</span>
+                <span class="line-through ml-3">$123.26</span>
+              </p>
+              <img
+                src="./asset/assets/key.png"
+                alt="key"
+                class="absolute top-40 left-36 md:top-36 md:left-24"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4 snacks">
+            <div class="shadow-2xl rounded-xl p-3 relative ">
+              <img
+                src="./asset/assets/choculate.png"
+                alt="choculate"
+                class="w-40 bg-gray-200 mx-auto"
+              />
+              <p class="text-center md:my-2 my-6">Snacks</p>
+              <div class="text-orange-500 text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <p class="text-center">
+                Fresh Organic villa farm lamon <br />
+                500g pack
+              </p>
+              <p class="text-center">
+                <span class="text-red-500">$120.25 </span>
+                <span class="line-through ml-3">$123.26</span>
+              </p>
+              <img
+                src="./asset/assets/key.png"
+                alt="key"
+                class="absolute top-40 left-36 md:top-36 md:left-24"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4 apples">
+            <div class="shadow-2xl rounded-xl p-3 relative">
+              <img
+                src="./asset/assets/apple (2).png"
+                alt="apple"
+                class="w-40 bg-gray-200 mx-auto"
+              />
+              <p class="text-center md:my-2 my-6">Apple</p>
+              <div class="text-orange-500 text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <p class="text-center">
+                Fresh Organic villa farm lamon <br />
+                500g pack
+              </p>
+              <p class="text-center">
+                <span class="text-red-500">$120.25</span>
+                <span class="line-through ml-3">$123.26</span>
+              </p>
+              <img
+                src="./asset/assets/key.png"
+                alt="key"
+                class="absolute top-40 left-36 md:top-36 md:left-24"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4 fruits">
+            <div class="shadow-2xl rounded-xl p-3 relative">
+              <img
+                src="./asset/assets/watermelon.png"
+                alt="watermelon"
+                class="w-40 bg-gray-200 mx-auto"
+              />
+              <p class="text-center md:my-2 my-6">Fruits</p>
+              <div class="text-orange-500 text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <p class="text-center">
+                Fresh Organic villa farm lamon <br />
+                500g pack
+              </p>
+              <p class="text-center">
+                <span class="text-red-500">$120.25</span>
+                <span class="line-through ml-3">$123.26</span>
+              </p>
+              <img
+                src="./asset/assets/key.png"
+                alt="key"
+                class="absolute top-40 left-36 md:top-36 md:left-24"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4 snacks">
+            <div class="shadow-2xl rounded-xl p-3 relative">
+              <img
+                src="./asset/assets/crunchy.png"
+                alt="crunchy"
+                class="w-40 bg-gray-200 mx-auto"
+              />
+              <p class="text-center md:my-2 my-6">Snacks</p>
+              <div class="text-orange-500 text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <p class="text-center">
+                Fresh Organic villa farm lamon <br />
+                500g pack
+              </p>
+              <p class="text-center">
+                <span class="text-red-500">$120.25</span>
+                <span class="line-through ml-3">$123.26</span>
+              </p>
+              <img
+                src="./asset/assets/key.png"
+                alt="key"
+                class="absolute top-40 left-36 md:top-36 md:left-24"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4 bakerys">
+            <div class="shadow-2xl rounded-xl p-3 relative">
+              <img
+                src="./asset/assets/cake (2).png"
+                alt="cake"
+                class="w-40 bg-gray-200 mx-auto"
+              />
+              <p class="text-center md:my-2 my-6">Bakery</p>
+              <div class="text-orange-500 text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <p class="text-center">
+                Fresh Organic villa farm lamon <br />
+                500g pack
+              </p>
+              <p class="text-center">
+                <span class="text-red-500">$120.25 </span>
+                <span class="line-through ml-3">$123.26</span>
+              </p>
+              <img
+                src="./asset/assets/key.png"
+                alt="key"
+                class="absolute top-40 left-36 md:top-36 md:left-24"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- products -->
+     <section class="max-w-5xl mx-auto p-5 mt-5 md:grid grid-cols-3 gap-4"> 
+      <div
+        class="bg-cover bg-center mx-auto md:w-80 md:h-56 mb-3 rounded-2xl"
+        style="background-image: url('./asset/assets/healthy\ beakery.png')"
+      >
+        <section class="text-black p-5">
+          <h1 class="text-xl md:text-xl font-bold my-2">
+            Healthy <br />
+            Bekery Products
+          </h1>
+          <p class="text-sm md:text-lg mb-1">
+            <span class="text-red-600">30%</span> off on first order
+          </p>
+          <button
+            class="bg-orange-700 text-white text-sm md:text-l p-3 rounded-xl my-5 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+          >
+            Shop Now
+          </button>
+        </section>
+      </div>
+
+      <div
+        class="bg-cover bg-center mx-auto md:w-80 md:h-56 mb-3 rounded-2xl"
+        style="background-image: url('./asset/assets/fresh-snacks.png')"
+      >
+        <section class="text-black p-5">
+          <h1 class="text-xl md:text-xl font-bold my-2">
+            Fresh <br />
+            Snacks & Sweets
+          </h1>
+          <p class="text-sm md:text-l mb-1">
+            <span class="text-red-600">20%</span> off on first order
+          </p>
+          <button
+            class="bg-orange-700 text-white text-sm md:text-lg p-3 rounded-xl my-5 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+          >
+            Shop Now
+          </button>
+        </section>
+      </div>
+
+      <div
+        class="bg-cover bg-center mx-auto md:w-80 md:h-56 mb-2 rounded-2xl"
+        style="background-image: url('./asset/assets/fresh-organic.png')"
+      >
+        <section class="text-black p-5">
+          <h1 class="text-xl md:text-xl font-bold my-2">
+            Fresh & Healthy <br />
+            Organic Fruits
+          </h1>
+          <p class="text-sm md:text-l mb-1">
+            <span class="text-red-600">35%</span> off on first order
+          </p>
+          <button
+            class="bg-orange-700 text-white text-sm md:text-lg p-3 rounded-xl my-5 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+          >
+            Shop Now
+          </button>
+        </section>
+      </div>
+    </section>
+
+    <!-- product packing -->
+    <section
+      class="max-w-5xl mx-auto flex flex-col justify-between items-center md:flex-row p-5 gap-3"
+    >
+      <div class="p-5 mt-5 bg-gray-200 rounded-2xl text-center md:w-56 md:h-40">
+        <p class="font-bold mt-3">Product Packing</p>
+        <p class="my-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorum
+        </p>
+      </div>
+
+      <div class="p-5 mt-5 bg-gray-200 rounded-2xl text-center md:w-56 md:h-40">
+        <p class="font-bold  mt-3">24X7 Support</p>
+        <p class="my-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorum
+        </p>
+      </div>
+
+      <div class="p-5 mt-5 bg-gray-200 rounded-2xl text-center md:w-56 md:h-40">
+        <p class="font-bold mt-3">Delivery in 5 Days</p>
+        <p class="my-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorum
+        </p>
+      </div>
+
+      <div class="p-5 mt-5 bg-gray-200 rounded-2xl text-center md:w-56 md:h-40">
+        <p class="font-bold mt-3">Payment Secure</p>
+        <p class=" my-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorum
+        </p>
+      </div>
+    </section>
+
+    <section style="background-color: #E9CBBE;" class="relative">
+      <!-- <div
+        class="bg-cover bg-center h-96 my-5"
+        style="background-image: url('./assets/section-baner.png')"
+      >
+      
+        <div class="bg-gray-200 shadow-2xl rounded-2xl w-10">
+            <p class="inline-block">30%</p>
+            <h3 class="font-bold text-2xl">Great deal on organic food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odio tenetur sunt assumenda, fugiat corpori</p>
+            <div class="clock text-center md:text-left p-52 font-bold text-2xl"></div>
+        </div>
+    </div> -->
+
+      <div
+        class="max-w-5xl mx-auto p-5 flex flex-col md:flex-row-reverse justify-between items-center gap-5"
+      >
+        <div class=""><img src="./asset/assets/cropped img.png" alt="banner" /></div>
+        <div style="background-color: #E9CBBE;" class="shadow-2xl rounded-4xl p-3 mt-5">
+          <p class="inline-block"><span class="text-red-400">30%</span> OFF</p>
+          <h3 class="font-bold text-2xl">Great deal on organic food</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum</p>
+          <div
+            class="clock font-bold text-l p-2 my-1 border border-gray-400 rounded-xl shadow-4xl text-gray-900"
+          >
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="max-w-5xl mx-auto flex flex-col  items-center md:flex-row p-5 gap-4">
+      <div
+        class="bg-cover bg-center w-full md:w-64 h-80 my-5 rounded-2xl"
+        style="background-image: url('./asset/assets/chips.png')"
+      ></div>
+      <div
+        class="bg-cover bg-center w-full md:w-64 h-80 my-5 rounded-2xl"
+        style="background-image: url('./asset/assets/chips-cake.png')"
+      ></div>
+
+      <div
+        class="bg-cover bg-center w-full md:w-2/4 h-80 my-5 rounded-2xl"
+        style="background-image: url('./asset/assets/chips-fruits.png')"
+      >
+        <section class="text-black px-5 pt-20 text-right">
+          <h1 class="text-xl md:text-2xl font-bold mb-6">
+            Fresh & Healthy <br />
+            Organic Fruits
+          </h1>
+          <p class="text-sm md:text-l mb-2">
+            <span class="font-bold">25%</span> off
+          </p>
+          <button
+            class="bg-orange-700 text-white text-sm md:text-lg p-3 rounded-xl mb-5 hover:bg-teal-500 active:bg-teal-600 cursor-pointer transform hover:scale-125 transition ease-out duration-300"
+          >
+            Shop Now
+          </button>
+        </section>
+      </div>
+    </section>
+
+    <!-- people -->
+    <section class="max-w-5xl mx-auto p-5 mt-5">
+      <h1 class="text-center text-xl md:text-3xl mt-7 font-bold">
+        Great Words From People
+      </h1>
+      <p class="text-center text-lg md:text-xl my-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vel
+        repellendus <br />
+        inventore dolor animi facilis natu inventore dolor animi facilis natu
+      </p>
+
+      <div class="caption md:grid grid-cols-3 gap-3">
+        <figure class="my-12 relative">
+          <blockquote class="bg-gray-200 pl-14 pr-8 py-12 rounded-3xl relative">
+            <h2 class="text-center sm:text-l mb-2 text-slate-900">
+              Co Founder
+            </h2>
+            <figcaption
+              class="text-l sm:text-xl text-center mt-2 text-slate-500 font-bold mb-4"
+            >
+              Stephen Smith
+            </figcaption>
+            <p
+              class="text-l sm:text-xl text-center mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-sky-700 before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-sky-700 after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              commodi, pariatur doloribus
+            </p>
+          </blockquote>
+          <img
+            src="./asset/assets/stev.png"
+            alt="picture"
+            class="absolute -top-10 left-36 md:right-28 md:-top-8 w-20"
+          />
+        </figure>
+
+        <figure class="my-12 relative">
+          <blockquote class="bg-gray-200 pl-14 pr-8 py-12 rounded-3xl relative">
+            <h2 class="text-center sm:text-l mb-2 text-slate-900">Manager</h2>
+            <figcaption
+              class="text-l sm:text-xl text-center mt-2 text-slate-500 font-bold mb-4"
+            >
+              Lorem Robinson
+            </figcaption>
+            <p
+              class="text-l sm:text-xl text-center mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-sky-700 before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-sky-700 after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              commodi, pariatur doloribus
+            </p>
+          </blockquote>
+          <img
+            src="./asset/assets/lorem.png"
+            alt="picture"
+            class="absolute -top-10 left-36 md:right-28 md:-top-8 w-20"
+           
+          />
+        </figure>
+
+        <figure class="my-12 relative">
+          <blockquote class="bg-gray-200 pl-14 pr-8 py-12 rounded-3xl relative">
+            <h2 class="text-center sm:text-l mb-2 text-slate-900">
+              Team Leader
+            </h2>
+            <figcaption
+              class="text-l sm:text-xl text-center mt-2 text-slate-500 font-bold mb-4"
+            >
+              Saddika Alard
+            </figcaption>
+            <p
+              class="text-l sm:text-xl text-center mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-sky-700 before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-sky-700 after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              commodi, pariatur doloribus
+            </p>
+          </blockquote>
+          <img
+            src="./asset/assets/saddi.png"
+            alt="picture"
+            class="absolute -top-10 left-36 md:right-28 md:-top-8 w-20"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="max-w-5xl mx-auto p-5 mt-5" id="blog">
+      <h1 class="text-center text-xl md:text-3xl mt-7 font-bold">
+        Latest News
+      </h1>
+      <p class="text-center text-lg md:text-xl my-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vel
+        repellendus <br />
+        inventore dolor animi facilis natu inventore dolor animi facilis natu
+      </p>
+      <div class="flex flex-col justify-between items-center gap-3 md:flex-row">
+        <div class="shadow-xl my-4 rounded-2xl mb-4 relative">
+          <div class="mt-3">
+            <p class="p-2 mt-3">My Admin | Snacks</p>
+            <p class="p-2 font-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              vel repellendus
+            </p>
+            <a href="#" class="p-2 text-green-500 mb-2">Read More</a>
+          </div>
+          <img src="./asset/assets/pear-fruit.jpg" alt="pear" class="w-full mt-3" />
+          <div class="absolute bottom-4 right-5 bg-gray-600 px-3 py-1 text-white rounded-xl">
+            <p class="font-bold">10</p>
+            <p>Oct</p>
+          </div>
+        </div>
+
+        <div class="shadow-xl my-4 rounded-2xl relative">
+          <div class="mt-3">
+            <p class="p-2 mt-3">My Admin | Food</p>
+            <p class="p-2 font-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              vel repellendus
+            </p>
+            <a href="#" class="p-2 text-green-500 mb-2">Read More</a>
+          </div>
+          <img
+            src="./asset/assets/pear-fruit.jpg"
+            alt="pepper-fruit"
+            class="w-full mt-3"
+          />
+          <div class="absolute bottom-4 right-5 bg-gray-600 px-3 py-1 text-white rounded-xl">
+            <p class="font-bold">09</p>
+            <p>Sep</p>
+          </div>
+        </div>
+
+        <div class="shadow-xl my-4 rounded-2xl relative">
+          <div class="mt-3">
+            <p class="p-2 mt-3">My Admin | Snacks</p>
+            <p class="p-2 font-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              vel repellendus
+            </p>
+            <a href="#" class="p-2 text-green-500 mb-2">Read More</a>
+          </div>
+          <img
+            src="./asset/assets/tomato-fruit.png"
+            alt="tomato-fruit"
+            class="w-full mt-3"
+          />
+          <div class="absolute bottom-4 right-5 bg-gray-600 px-3 py-1 text-white rounded-xl">
+            <p class="font-bold">12</p>
+            <p>Oct</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="bg-gray-200 pb-10" id="footer">
+      <div class="max-w-5xl mx-auto px-5 pt-24 my-12 md:grid grid-cols-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="./asset/assets/apple-web.png" alt="apple-icon" />
+            <img src="./asset/assets/foodtrove.png" alt="food-logo" />
+          </div>
+          <p class="mt-3">
+            FoodTrove is the biggest <br />
+            market of grecery <br />
+            products.Get your daily <br />
+            needs from our store.
+          </p>
+          <div class="my-5 flex items-center gap-2">
+            <div class="text-red-500">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p>
+              51 Green St.Huntington <br />ohaio beach Ontario,<br />
+              NY 11746 KY, USA.
+            </p>
+          </div>
+
+          <div class="my-5 flex items-center gap-2">
+            <div class="text-red-500">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <p>example@email.com</p>
+          </div>
+
+          <div class="my-5 flex items-center gap-2">
+            <div class="text-red-500">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <p>+91 123 4567890</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-bold"><a href="#">Company</a></p>
+          <p class="my-3"><a href="#">About Us</a></p>
+          <p class="my-3"><a href="#">Delivery Information</a></p>
+          <p class="my-3"><a href="#">Privacy Policy</a></p>
+          <p class="my-3"><a href="#">Terms & Conditions</a></p>
+          <p class="my-3"><a href="#">Contact Us</a></p>
+          <p class="my-3"><a href="#">Support Center</a></p>
+        </div>
+
+        <div class="">
+          <p class="font-bold">Category</p>
+          <p class="my-3">Dairy & Bakery</p>
+          <p class="my-3">Snack & Spicy</p>
+          <p class="my-3">Chicken & Meat</p>
+          <p class="my-3">Juice & Drinks</p>
+          <p class="my-3">Fruits & Vegetables</p>
+          <p class="my-3">Fast Food</p>
+        </div>
+
+        <div class="relative">
+          <p class="font-bold">Subscribe Our Newsletter</p>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search here..."
+            class="w-full bg-white my-5 rounded-l px-3 py-2 outline-0"
+          />
+          <a href="#"
+            ><img
+              src="./asset/assets/Form-arrow.png"
+              alt="arrow"
+              class="absolute top-14 right-3"
+          /></a>
+
+          <div class="social my-8 flex justify-start gap-2">
+            <div
+              class="bg-white rounded-xl hover:bg-indigo-900 hover:text-white"
+            >
+              <a class="" href=""
+                ><i
+                  class="fa-brands fa-facebook-f w-12 p-4 transition ease-out duration-500"
+                ></i
+              ></a>
+            </div>
+            <div
+              class="bg-white rounded-xl hover:bg-indigo-900 hover:text-white"
+            >
+              <a class="" href="#"
+                ><i
+                  class="fa-brands fa-x-twitter w-12 p-4 transition ease-out duration-500"
+                ></i
+              ></a>
+            </div>
+            <div
+              class="bg-white rounded-xl hover:bg-indigo-900 hover:text-white"
+            >
+              <a class="" href="#"
+                ><i
+                  class="fa-brands fa-telegram w-12 p-4 transition ease-out duration-500"
+                ></i
+              ></a>
+            </div>
+            <div
+              class="bg-white rounded-xl hover:bg-indigo-900 hover:text-white"
+            >
+              <a class="" href="#"
+                ><i
+                  class="fa-brands fa-instagram w-12 p-4 transition ease-out duration-500"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <img
+              src="./asset/assets/tomato-vegetables.png"
+              class="w-11"
+              alt="tomato-vegetables"
+            />
+            <img src="./asset/assets/garlic.png" class="w-11" alt="garlic" />
+            <img src="./asset/assets/ginger.png" class="w-11" alt="ginger" />
+            <img src="./asset/assets/meat.png" class="w-11" alt="meat" />
+            <img
+              src="./asset/assets/tomato-hand.png"
+              class="w-11"
+              alt="tomato-fruit"
+            />
+          </div>
+        </div>
+      </div>
+      <hr class="border-gray-400" />
+      <p class="text-center mt-8">
+        &copy; 2024 <span class="text-red-500">FoodTrove</span>, All rights
+        reserved
+      </p>
+    </section>
+
+    <script src="./index.js"></script>
+
+
+    <!-- <div class="bg-white shadow sticky top-0 z-10 ">
+      <nav class="max-w-5xl mx-auto p-5 md:p-7 md:flex justify-between items-center">
+          <div class="flex justify-between items-center">
+          <div>
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 md:hidden"
+              id="burger"
+              >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+              />
+              </svg>
+          </div>
+          <p><a href="#"><i class="fa-solid fa-phone"></i> +123 ( 456 ) ( 7890 )</p></a>
+      </div>
+              <ul id="menu" class="hidden  mt-3  md:flex flex-row gap-8 md:mt-3">
+                  <li class="pb-5"><a href="#home" class="hover:opacity-90">Home</a></li>
+                  <li class="pb-5">
+                      <a href="#" class="">Category <i class="fa-solid fa-caret-down"></i> </a>
+                  </li>
+                  <li class="pb-5">
+                      <a href="#product">Product <i class="fa-solid fa-caret-down"></i> </a>
+                  </li>
+                  <li class="pb-5">
+                      <a href="#footer">Legal <i class="fa-solid fa-caret-down"></i> </a>
+                  </li>
+                  <li class="pb-5">
+                      <a href="#blog">Blog <i class="fa-solid fa-caret-down"></i> </a>
+                  </li>
+                  <li class="pb-5">
+                      <a href="#element">Elements <i class="fa-solid fa-caret-down"></i> </a>
+                  </li>
+              </ul>
+              
+          
+      </nav>
+  </div> -->
+  </body>
+</html>
+
+
+
